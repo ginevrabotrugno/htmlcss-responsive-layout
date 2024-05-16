@@ -96,3 +96,45 @@ header .container {
         display: block;
     }
 }
+
+
+/*************************************************
+    REGOLE MAIN
+ *************************************************/
+
+section {
+padding-top: 120px;
+}
+
+
+/* features */
+.card {
+
+    width: 100%;
+    background-color: #b5ddff;
+    border-radius: 25px;
+    margin-bottom: 30px;
+
+    /* DEBUG */
+    min-height: 400px;    
+}
+
+
+/* VIEW TABLET */
+@media screen and (min-width:768px) {
+    
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc((100% / 3) - 10px);
+    }
+
+    .card.big {
+        width: calc(((100% / 3) * 2) - 10px);
+    }
+}
