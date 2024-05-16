@@ -29,8 +29,8 @@ img {
     min-height: 100%;
     margin: 0 auto;
 
-    /* DEBUG
-    background-color: yellow; */
+    /* DEBUG */
+    /* background-color: yellow; */
 }
 
 .button {
@@ -69,11 +69,6 @@ header .container {
 
 #main-menu {
     display: none;
-
-    /* DEBUG
-    width: 600px;
-    background-color: white;
-    min-height: 50px; */
 }
 
 #main-menu ul {
@@ -107,22 +102,23 @@ header .container {
  *************************************************/
 
 section {
-padding-top: 120px;
+padding: 120px 0 30px;
+}
+
+.purple-bg {
+    background-color: #9792e4;
+    color: #ffffff;
 }
 
 
 /* features */
 .card {
 
-    width: 100%;
-    background-color: #b5ddff;
+    width: calc((100% / 3) - 10px);
     text-align: center;
     border-radius: 25px;
     margin-bottom: 30px;
     padding: 10px;
-
-    /* DEBUG
-    min-height: 400px;     */
 }
 
 .card.large {
@@ -164,19 +160,23 @@ padding-top: 120px;
 /* VIEW TABLET */
 @media screen and (min-width:768px) {
     
-    .row {
+    .features .row {
         width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 20px;
     }
 
-    .card {
-        width: calc((100% / 3) - 10px);
+    .features .card {
+        background-color: #b5ddff;
     }
 
     .card.large {
         width: calc(((100% / 3) * 2) - 10px);
+    }
+
+    h3 {
+        font-size: 25px;
     }
 
     .picture {
@@ -193,10 +193,53 @@ padding-top: 120px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-    }
-
-    .col-50 {
-        width: 50%;
+        gap: 10px;
     }
 
 }
+
+/* strategic planning */
+
+.card.white-bg {
+    background-color: #ffffff;
+    color: #111 ;
+}
+
+.fa-arrow-down-long {
+    background-color: #9792e4;
+    padding: 12px 15px;
+    border-radius: 50%;
+}
+
+
+/* view tablet */
+
+@media screen and (min-width: 780px) {
+    
+    .purple-bg h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* view desktop */
+
+@media screen and (min-width: 1200px) {
+    .purple-bg .row {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: flex-end;
+        
+    }
+
+    .card.purple-bg img {
+        position: relative;
+        bottom: 50px;
+    }
+}
+
+
+
+
+
