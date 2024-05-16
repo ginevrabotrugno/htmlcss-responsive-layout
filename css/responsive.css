@@ -1,0 +1,140 @@
+/*************************************************
+    REGOLE HEADER
+ *************************************************/
+
+/* VIEW DESKTOP */
+
+@media screen and (min-width:1200px) {
+
+    .container {
+        width: 70%;
+    }
+    
+    #hamburger{
+        display: none;
+    }
+
+    #main-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/*************************************************
+    REGOLE MAIN
+ *************************************************/
+
+
+ /* view tablet */
+
+@media screen and (min-width:768px) {
+    
+    /* features */
+    .features .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .features .card {
+        width: calc((100% / 3) - 10px);
+    }
+
+    .card.large {
+        width: calc(((100% / 3) * 2) - 10px);
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .picture {
+        max-width: 50%;
+    }
+
+    /* strategic planning  */
+    .purple-bg h2 {
+        font-size: 30px;
+    }
+
+    /* testimonials */
+    .row.purple-bg {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .testimonials .pic {
+        width: calc((100% / 3) - 10px);
+        text-align: center;
+    }
+
+    .pic img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #large {
+        width: calc(((100% / 3)*2)-10px);
+        text-align: left;
+    }
+
+     /* benefits of working with us  */
+
+    
+}
+
+
+/* view desktop */
+@media screen and (min-width:1200px) {
+
+    /* features */
+    .features .card.large {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .features .col-50 {
+        width: 50%
+    }
+
+    /* strategic planning  */
+    .purple-bg .row {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: flex-end;
+        
+    }
+
+    .planning .card {
+        width: calc((100% / 3) - 10px);
+    }
+
+    .spaced {
+        padding-bottom: 80px;
+    }
+
+    
+    /* testimonials */
+
+    #large {
+        width: calc(((100% / 3)*2)-10px);
+        text-align: left;
+    }
+
+     /* benefits of working with us  */
+
+}

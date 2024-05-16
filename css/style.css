@@ -1,6 +1,7 @@
 /*************************************************
     REGOLE GENERALI
  *************************************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -25,12 +26,9 @@ img {
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     min-height: 100%;
     margin: 0 auto;
-
-    /* DEBUG */
-    /* background-color: yellow; */
 }
 
 .button {
@@ -39,6 +37,10 @@ img {
     padding: 5px 10px;
     border-radius: 25px;
 }
+
+
+
+
 
 
 
@@ -79,30 +81,24 @@ header .container {
 
 
 
-/* VIEW DESKTOP */
 
-@media screen and (min-width:1200px) {
 
-    .container {
-        width: 70%;
-    }
-    
-    #hamburger{
-        display: none;
-    }
 
-    #main-menu {
-        display: block;
-    }
-}
+
+
+
 
 
 /*************************************************
     REGOLE MAIN
  *************************************************/
 
+main {
+    padding-top: 85px;
+}
+
 section {
-padding: 120px 0 30px;
+padding: 30px 0;
 }
 
 .purple-bg {
@@ -113,16 +109,15 @@ padding: 120px 0 30px;
 
 /* features */
 .card {
-
     width: 100%;
     text-align: center;
     border-radius: 25px;
-    margin-bottom: 30px;
     padding: 10px;
 }
 
 .features .card {
     background-color: #b5ddff;
+    margin-bottom: 20px;
 }
 
 .card.large {
@@ -147,7 +142,7 @@ padding: 120px 0 30px;
 }
 
 #big {
-    padding: 10px 60px;
+    padding: 10px 50px;
     background-color: #0084fd;
     color: #ffffff;
     margin: 20px 0;
@@ -159,52 +154,6 @@ padding: 120px 0 30px;
     bottom: -15px;
 }
 
-
-
-/* VIEW TABLET */
-@media screen and (min-width:768px) {
-    
-    .features .row {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .features .card {
-        width: calc((100% / 3) - 10px);
-    }
-
-    .card.large {
-        width: calc(((100% / 3) * 2) - 10px);
-    }
-
-    h3 {
-        font-size: 25px;
-    }
-
-    .picture {
-        max-width: 50%;
-    }
-    
-}
-
-
-/* view desktop */
-@media screen and (min-width:1200px) {
-
-    .card.large {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        gap: 10px;
-    }
-
-    .features .col-50 {
-        width: 50%
-    }
-
-}
 
 /* strategic planning */
 
@@ -220,38 +169,43 @@ padding: 120px 0 30px;
 }
 
 
-/* view tablet */
+/* testimonials */
 
-@media screen and (min-width: 780px) {
-    
-    .purple-bg h2 {
-        font-size: 30px;
-    }
+.info.centered {
+    text-align: center;
+}
+
+.purple {
+    color: #9792e4;
+}
+
+.row.purple-bg {
+    padding: 20px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonials .card.large {
+    text-align: center;
+}
+
+.pic {
+    text-align: center;
+}
+
+.pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials span{
+    display: block;
+    padding-top: 30px;
 }
 
 
-/* view desktop */
-
-@media screen and (min-width: 1200px) {
-
-    .purple-bg .row {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        align-items: flex-end;
-        
-    }
-
-    .card {
-        width: calc((100% / 3) - 10px);
-    }
-
-    .spaced {
-        padding-bottom: 80px;
-    }
-}
-
-
-
+ /* benefits of working with us  */
 
 
