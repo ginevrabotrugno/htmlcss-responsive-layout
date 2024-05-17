@@ -36,22 +36,21 @@
     
     /* features */
     .features .row {
-        width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 20px;
     }
 
-    .features .card {
+    .features .col {
         width: calc((100% / 3) - 10px);
     }
 
-    .card.large {
+    .col.large {
         width: calc(((100% / 3) * 2) - 10px);
     }
 
-    h3 {
-        font-size: 25px;
+    .features h3 {
+        font-size: 20px;
     }
 
     .picture {
@@ -64,7 +63,8 @@
     }
 
     /* testimonials */
-    .row.purple-bg {
+    .testimonials .row {
+        color: var(--white);
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -97,7 +97,7 @@
         flex-wrap: wrap;
     }
 
-    .benefits .card {
+    .benefits .col {
         width: calc(50% - 10px);
     }
 
@@ -108,7 +108,7 @@
         justify-content: space-between;
     }
 
-    .about-us .card {
+    .about-us .col {
         width: calc(50% - 10px);
     }
 
@@ -124,15 +124,20 @@
 @media screen and (min-width:1200px) {
 
     /* features */
-    .features .card.large {
+    .features .col.large {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         gap: 10px;
     }
 
-    .features .col-50 {
+    .col.large div {
         width: 50%;
+        bottom: -30px;
+    }
+
+    .col.large .info {
+        align-self: flex-start;
     }
 
     /* strategic planning  */
@@ -144,7 +149,7 @@
         
     }
 
-    .planning .card {
+    .planning .col {
         width: calc((100% / 3) - 10px);
     }
 
@@ -169,7 +174,7 @@
         gap: 10px;
     }
 
-     .benefits .card {
+     .benefits .col {
         width: calc((100% / 3) - 10px);
     }
     
