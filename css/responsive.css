@@ -101,9 +101,22 @@
         width: calc(50% - 10px);
     }
 
-    
+    /* about us */
 
-    
+    .about-us .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us .card {
+        width: calc(50% - 10px);
+    }
+
+    /* get started */
+    .get-started h2 {
+        font-size: 100px;
+    }
+
 }
 
 
