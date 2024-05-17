@@ -172,5 +172,25 @@
      .benefits .card {
         width: calc((100% / 3) - 10px);
     }
+    
+
+    /* get started */
+
+    .get-started .container {
+        width: 40%;
+    }
 
 }
+
+
+/*************************************************
+    REGOLE FOOTER
+ *************************************************/
+
+ @media screen and (min-width:1200px) {
+
+    footer .container {
+        width: 40%;
+    }
+    
+ }
