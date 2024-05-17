@@ -91,6 +91,18 @@
 
      /* benefits of working with us  */
 
+    .benefits .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .benefits .card {
+        width: calc(50% - 10px);
+    }
+
+    
+
     
 }
 
@@ -107,7 +119,7 @@
     }
 
     .features .col-50 {
-        width: 50%
+        width: 50%;
     }
 
     /* strategic planning  */
@@ -136,5 +148,16 @@
     }
 
      /* benefits of working with us  */
+
+    .benefits .row {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+     .benefits .card {
+        width: calc((100% / 3) - 10px);
+    }
 
 }

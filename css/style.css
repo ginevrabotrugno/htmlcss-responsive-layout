@@ -141,9 +141,12 @@ padding: 30px 0;
     padding: 25px;
 }
 
-#big {
-    padding: 10px 50px;
+.blue-bg {
     background-color: #0084fd;
+}
+
+.big {
+    padding: 10px 50px;
     color: #ffffff;
     margin: 20px 0;
     display: inline-block;
@@ -207,5 +210,29 @@ padding: 30px 0;
 
 
  /* benefits of working with us  */
+
+h2.section-title {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.card.left {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card.left > * {
+    margin: 10px 0;
+}
+
+h3.max {
+    font-size: 50px;
+}
+
+.left .card-title {
+    color: #9792e4;
+    margin: 10px 0;
+}
 
 
